@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #2563eb;
+  --secondary: #64748b;
+  --accent: #fbbf24;
+  --radius-large: 22px;
+  --radius-med: 16px;
+  --radius-small: 8px;
+  --shadow-main: 0 2px 8px 0 rgba(100,116,139,0.11);
+  --shadow-hover: 0 4px 16px 0 rgba(100,116,139,0.14);
+}
+
+html,
+body {
+  @apply bg-white font-sans text-base;
+  min-height: 100vh;
+}
+
+a {
+  @apply underline;
+}
+
+::-webkit-scrollbar {
+  height: 7px;
+  width: 7px;
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dbeafe;
+  border-radius: 10px;
+}
+
+/* Responsive helpers */
+@media (max-width: 540px) {
+  body {
+    @apply text-sm;
+  }
+}
+
+button,
+input,
+select {
+  font-family: inherit;
+}
